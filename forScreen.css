@@ -1,0 +1,65 @@
+
+div {
+    transition: all .3s;
+}
+
+
+
+#tank {
+    position: absolute;
+    top: 140px;
+    left: 180px;
+
+    background-image: url(images/tank1.png);
+    background-position: center center;
+    width: 20px;
+    height: 20px;
+
+}
+
+#tankEnemy {
+    position: absolute;
+    top: 100px;
+    left: 80px;
+    background-image: url(images/tank2.png);
+    background-position: center center;
+    width: 20px;
+    height: 20px;
+
+}
+
+.outside-cell {
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    outline: 2px solid lavender;
+}
+
+.inside-cell {
+    width: 20px;
+    height: 20px;
+    outline: 1px solid lavender;
+    float: left;
+}
+
+#gun1, #gun2  {
+    width: 5px;
+    height: 4px;
+    border-radius: 100%;
+    background-color: red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);}
+
+#gun2  {
+
+    background-color: yellow;
+}
+
