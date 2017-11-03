@@ -39,6 +39,7 @@ function endGame() {
     var timeOfWholeGame = Math.floor((Date.now() - start)/1000);
     clearInterval(handle);
     if (timeOfWholeGame) console.log("игра длилась " + timeOfWholeGame + " сек.");
+    else if (!timeOfWholeGame) console.log("нет данных о длительности игры");
     // start = Date.now();
 }
 
