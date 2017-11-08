@@ -1,6 +1,6 @@
 
 div {
-    transition: all .3s;
+    transition: all .1s;
 }
 
 #tank {
@@ -31,10 +31,11 @@ div {
     margin: 0;
     padding: 0;
     position: absolute;
-    top: 50%;
+    top: 10%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -10%);
     outline: 2px solid lavender;
+    clear: both;
 }
 
 .inside-cell {
@@ -59,3 +60,63 @@ div {
     background-color: yellow;
 }
 
+
+
+body, html {min-width: 700px}
+
+.btn-group {
+    position: absolute;
+    top: 2%;
+    left: 2%;
+
+   }
+
+ /*взял готовое решение по стилизации button с https://codepen.io/sebj54/pen/oxluI  */
+
+
+
+.btn {
+float: none;
+    display: block;
+    margin: 9px 15px;
+    padding: 0;
+    min-width:100px;
+    overflow: hidden;
+
+    border-width: 0;
+    outline: none;
+    border-radius: 2px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+
+    background-color: gold;
+    color: #ecf0f1;
+
+    transition: background-color .3s;
+}
+
+ .btn:focus {
+           background-color: #e67e22;
+  }
+
+.btn:active {
+    background-color: #e74c3c !important;
+}
+
+.btn:hover  {
+    background-color: orange;
+}
+
+.btn > * {
+    position: relative;
+}
+
+.btn span {
+    display: block;
+    padding: 2px 5px;
+}
+
+
+
+h2 {
+    font-weight: normal;
+}
