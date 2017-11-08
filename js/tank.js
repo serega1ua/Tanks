@@ -51,16 +51,22 @@ function startGame() {
 }
 
 function pauseGame() {
-    timeOfWholeGame += timePassed / 1000; // плюсуем время конкрктного сеанса до pauseGame()
+    timeOfWholeGame = timeOfWholeGame +  (timePassed / 1000); // плюсуем время конкрктного сеанса до pauseGame()
+
     console.log("запомнил, что до паузы в этом сеансе игры прошло   " + timePassed / 1000 + " секунд");
     console.log("сейчас общее время игры   " + timeOfWholeGame + " секунд");
     // добавляем время, которое прошло перед паузой через pauseGame()
-    clearInterval(handle);
+    // console.log("handle =  " + handle);
+      clearInterval(handle);
+    //     console.log("handle =  " + handle);
+    timePassed = 0; //обнуляем, чтоб второй раз этот сеанс не был посчитан при вызове   endGame() после  вызова pauseGame()
 }
 
 function endGame() {
-    timeOfWholeGame += timePassed / 1000; // плюсуем время конкрктного сеанса до endGame()
-    clearInterval(handle);
+     timeOfWholeGame  = timeOfWholeGame + (timePassed /1000); // плюсуем время конкрктного сеанса до endGame()
+    // console.log("handle =  " + handle);
+      clearInterval(handle);
+    // console.log("handle =  " + handle);
     if (timeOfWholeGame) console.log("игра длилась " + timeOfWholeGame + " сек.");
     else if (!timeOfWholeGame) console.log("нет данных о длительности игры");
     // start = Date.now();
@@ -72,8 +78,8 @@ function endGame() {
 function draw(timePassed, movingObject, direction, optionalDirection) {
     var lefter = getCssProperty(movingObject, "left");
     var topper = getCssProperty(movingObject, "top");
-    console.log("lefter =   " + lefter);
-    console.log("topper =   " + topper);
+    // console.log("lefter =   " + lefter);
+    // console.log("topper =   " + topper);
 
     switch (direction) {
         case "left":
@@ -131,26 +137,27 @@ function startGun() {
     clearInterval(handle);
     handleGun = setInterval(function () {
         // вычислить сколько времени прошло с начала анимации
-        var timePassed = Date.now() - start1;
+        var timePassed1 = Date.now() - start1;
 
-        if (timePassed >= 9000) {
+        if (timePassed1 >= 9000) {
             clearInterval(handleGun); // конец через 2 секунды
             return;
         }
 
         // рисует состояние анимации, соответствующее времени timePassed
-        drawGun(timePassed);
+        drawGun(timePassed1);
 
     }, 20);
 
+    pauseGame();
     startGame();
 }
 //startGun();
 
 // в то время как timePassed идёт от 0 до 2000
 // left принимает значения от 0 до 400px
-function drawGun(timePassed) {
-    gun.style.left = timePassed / 10 + 'px';
+function drawGun(timePassed1) {
+    gun.style.left = timePassed1 / 10 + 'px';
 }
 
 
