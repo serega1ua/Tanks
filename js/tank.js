@@ -78,22 +78,22 @@ function draw(timePassed, movingObject, direction, optionalDirection) {
     switch (direction) {
         case "left":
             if (lefter <= 360) movingObject.style.left = lefter + 20 + 'px';
-            if (optionalDirection === "top" && topper >= 20 ) movingObject.style.top = topper - 20 + 'px';
+            if (optionalDirection === "top" && topper >= 20) movingObject.style.top = topper - 20 + 'px';
             if (optionalDirection === "bottom" && topper <= 360) movingObject.style.top = topper + 20 + 'px';
             break;
         case "right":
             if (lefter >= 20) movingObject.style.left = lefter - 20 + 'px';
-            if (optionalDirection === "top" && topper >= 20 ) movingObject.style.top = topper - 20 + 'px';
+            if (optionalDirection === "top" && topper >= 20) movingObject.style.top = topper - 20 + 'px';
             if (optionalDirection === "bottom" && topper <= 360) movingObject.style.top = topper + 20 + 'px';
             break;
         case "bottom":
-            if (topper <= 360)  movingObject.style.top = topper + 20 + 'px';
-            if (optionalDirection === "right" && lefter >= 20 ) movingObject.style.top = topper - 20 + 'px';
+            if (topper <= 360) movingObject.style.top = topper + 20 + 'px';
+            if (optionalDirection === "right" && lefter >= 20) movingObject.style.top = topper - 20 + 'px';
             if (optionalDirection === "left" && lefter <= 360) movingObject.style.top = topper + 20 + 'px';
             break;
         case "top":
             if (topper >= 20) movingObject.style.top = topper - 20 + 'px';
-            if (optionalDirection === "right" && lefter >= 20 ) movingObject.style.top = topper - 20 + 'px';
+            if (optionalDirection === "right" && lefter >= 20) movingObject.style.top = topper - 20 + 'px';
             if (optionalDirection === "left" && lefter <= 360) movingObject.style.top = topper + 20 + 'px';
             break;
 
@@ -197,17 +197,21 @@ function toRightBottom() {
 
 document.getElementById("shot-button").onclick = shot;
 function shot() {
-    startGun(); }
+    startGun();
+}
 
-    document.getElementById("pause-button").onclick = toPause;
-    function toPause() {
-        pauseGame(); }
+document.getElementById("pause-button").onclick = toPause;
+function toPause() {
+    pauseGame();
+}
 
-        document.getElementById("start-button").onclick = toStart;
-        function toStart() {
-            startGame();  }
+document.getElementById("start-button").onclick = toStart;
+function toStart() {
+    startGame();
+}
 
 
 document.getElementById("stop-button").onclick = toEnd;
 function toEnd() {
-    endGame();  }
+    endGame();
+}

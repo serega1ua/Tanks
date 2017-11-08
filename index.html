@@ -12,14 +12,31 @@
 
 <body>
 
-<div>
-    <p> endGame();//конец игры с выводом времени <br>
-        startGame();//запуск игры<br>
-        pauseGame();//пауза игры<br>
-        draw(0, tankObject2, "left"); //ход танком вверх-вниз-право-лево <br>
-        draw(0, tankObject2, "left", "top")//ход танком по диагонали<br>
-        startGun();//выстрел из танка</p>
+
+<div class="btn-group">
+
+    <button class="btn" id="up-button" type="button"><span><img src="images/top.png"></span></button>
+
+    <button class="btn" id="bottom-button" type="button"><span><img src="images/bottom.png"></span></button>
+
+    <button class="btn" id="right-button" type="button"><span><img src="images/right.png"></span></button>
+
+    <button class="btn" id="left-button" type="button"><span><img src="images/left.png"></span></button>
+
+    <button class="btn" id="left-up-button" type="button"><span><img src="images/left-top-diagonal.png"></span></button>
+
+    <button class="btn" id="left-bottom-button" type="button"><span><img src="images/left-down-diagonal.png"></span>
+    </button>
+
+    <button class="btn" id="right-up-button" type="button"><span><img src="images/right-top-diagonal.png"></span>
+    </button>
+
+    <button class="btn" id="right-bottom-button" type="button"><span><img src="images/right-down-diagonal.png"></span>
+    </button>
+
+
 </div>
+
 <div class="outside-cell">
 
     <div id="tank"><span id="gun2"></span></div>
@@ -429,24 +446,8 @@
 
 </div>
 
-
 <div class="btn-group">
 
-    <button class="btn" id="up-button" type="button"><span><img src="images/top.png"></span></button>
-
-    <button class="btn" id="bottom-button" type="button"><span><img src="images/bottom.png"></span></button>
-
-    <button class="btn" id="right-button" type="button"><span><img src="images/right.png"></span></button>
-
-    <button class="btn" id="left-button" type="button"> <span><img src="images/left.png"></span></button>
-
-    <button class="btn" id="left-up-button" type="button"><span><img src="images/left-top-diagonal.png"></span></button>
-
-    <button class="btn" id="left-bottom-button" type="button"><span><img src="images/left-down-diagonal.png"></span></button>
-
-    <button class="btn" id="right-up-button" type="button"><span><img src="images/right-top-diagonal.png"></span></button>
-
-    <button class="btn" id="right-bottom-button" type="button"><span><img src="images/right-down-diagonal.png"></span></button>
 
     <button class="btn" id="stop-button" type="button"><span><img src="images/stop.png"></span></button>
 
@@ -455,8 +456,9 @@
     <button class="btn" id="pause-button" type="button"><span><img src="images/pause.png"></span></button>
 
     <button class="btn" id="start-button" type="button"><span><img src="images/play.png"></span></button>
-
+    
 </div>
+
 
 <script type="text/javascript" src="js/tank.js"></script>
 </body>

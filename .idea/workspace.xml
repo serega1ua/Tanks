@@ -15,11 +15,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="tank.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="tank.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/tank.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="884">
-              <caret line="190" column="1" lean-forward="true" selection-start-line="190" selection-start-column="1" selection-end-line="190" selection-end-column="1" />
+            <state relative-caret-position="-464">
+              <caret line="147" column="13" lean-forward="true" selection-start-line="147" selection-start-column="13" selection-end-line="147" selection-end-column="13" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -30,18 +30,18 @@
       <file leaf-file-name="forScreen.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/forScreen.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="479">
-              <caret line="122" column="0" lean-forward="false" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
+            <state relative-caret-position="303">
+              <caret line="35" column="15" lean-forward="true" selection-start-line="35" selection-start-column="15" selection-end-line="35" selection-end-column="15" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
-              <caret line="452" column="85" lean-forward="false" selection-start-line="452" selection-start-column="85" selection-end-line="452" selection-end-column="85" />
+            <state relative-caret-position="547">
+              <caret line="458" column="4" lean-forward="false" selection-start-line="458" selection-start-column="4" selection-end-line="458" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -61,6 +61,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>endGame</find>
+      <find>clear</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -71,9 +72,9 @@
       <list>
         <option value="$PROJECT_DIR$/forScreen.css" />
         <option value="$PROJECT_DIR$/tank.js" />
+        <option value="$PROJECT_DIR$/js/tank.js" />
         <option value="$PROJECT_DIR$/css/forScreen.css" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/js/tank.js" />
       </list>
     </option>
   </component>
@@ -229,15 +230,15 @@
       <updated>1509637051001</updated>
       <workItem from="1509637055759" duration="6002000" />
       <workItem from="1509646083788" duration="18218000" />
-      <workItem from="1510077606303" duration="23673000" />
+      <workItem from="1510077606303" duration="24867000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47893000" />
+    <option name="totallyTimeSpent" value="49087000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -313,29 +314,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/forScreen.css" />
     <entry file="file://$PROJECT_DIR$/tank.js" />
+    <entry file="file://$PROJECT_DIR$/js/tank.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-464">
+          <caret line="147" column="13" lean-forward="true" selection-start-line="147" selection-start-column="13" selection-end-line="147" selection-end-column="13" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/css/forScreen.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="479">
-          <caret line="122" column="0" lean-forward="false" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
+        <state relative-caret-position="303">
+          <caret line="35" column="15" lean-forward="true" selection-start-line="35" selection-start-column="15" selection-end-line="35" selection-end-column="15" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="452" column="85" lean-forward="false" selection-start-line="452" selection-start-column="85" selection-end-line="452" selection-end-column="85" />
+        <state relative-caret-position="547">
+          <caret line="458" column="4" lean-forward="false" selection-start-line="458" selection-start-column="4" selection-end-line="458" selection-end-column="4" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/tank.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="884">
-          <caret line="190" column="1" lean-forward="true" selection-start-line="190" selection-start-column="1" selection-end-line="190" selection-end-column="1" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
