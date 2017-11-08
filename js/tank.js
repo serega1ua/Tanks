@@ -134,7 +134,7 @@ var start1 = Date.now(); // сохранить время начала
 var handleGun;
 function startGun() {
     start1 = Date.now();
-    clearInterval(handle);
+    clearInterval(handleGun);
     handleGun = setInterval(function () {
         // вычислить сколько времени прошло с начала анимации
         var timePassed1 = Date.now() - start1;
@@ -149,8 +149,8 @@ function startGun() {
 
     }, 20);
 
-    pauseGame();
-    startGame();
+    // pauseGame(); // вынужден запустить  pauseGame() чтоб верно исчислялось время сеанса игры и при вызове  startGun()
+    // startGame();
 }
 //startGun();
 
